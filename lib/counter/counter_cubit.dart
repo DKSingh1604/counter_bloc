@@ -7,9 +7,9 @@ class CounterCubit extends Cubit<int> {
   //constructor: to get initial state
   CounterCubit(super.initialState);
 
-  //method to increment counter
+  //function to increment counter
   void increment() => emit(state + 1);
 
-  //method to decrement counter
+  //function to decrement counter
   void decrement() => emit(state - 1);
 }
