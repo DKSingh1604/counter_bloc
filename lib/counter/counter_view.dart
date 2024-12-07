@@ -17,7 +17,7 @@ class CounterView extends StatelessWidget {
           return Center(
             child: Text(
               state.toString(),
-              style: TextStyle(fontSize: 50),
+              style: const TextStyle(fontSize: 50),
             ),
           );
         },
@@ -28,15 +28,15 @@ class CounterView extends StatelessWidget {
           //increment button
           FloatingActionButton(
             onPressed: () => context.read<CounterCubit>().increment(),
-            child: Icon(Icons.add),
+            child: const Icon(Icons.add),
           ),
 
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
 
           //decrement button
           FloatingActionButton(
             onPressed: () => context.read<CounterCubit>().decrement,
-            child: Icon(Icons.remove),
+            child: const Icon(Icons.remove),
           ),
         ],
       ),

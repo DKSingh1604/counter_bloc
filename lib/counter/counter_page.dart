@@ -22,14 +22,14 @@ class CounterPage extends StatelessWidget {
             showDialog(
               context: context,
               builder: (context) => AlertDialog(
-                content: Text(state.toString() + " reached!"),
+                content: Text("$state reached!"),
               ),
             );
           }
         },
 
         //counter view
-        child: CounterView(),
+        child: const CounterView(),
       ),
     );
   }
